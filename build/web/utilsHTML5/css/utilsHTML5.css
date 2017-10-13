@@ -1,0 +1,154 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 20, 2017, 2:55:08 PM
+    Author     : Diego.Calcada
+*/
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.alertJS-container{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    transition: 1s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    z-index: 999999;
+}
+.msg-alertJS-vert-align{
+    height: 100%;
+    display: inline-block;
+}
+
+.icon-alertJS-vert-align{
+    height: 100%;
+    width: 70px;
+    display: inline-block;
+}
+
+.icon-alertJS,
+.msg-alertJS{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-alertJS{
+    padding-left: 15px;
+}
+
+.icon-alertJS div{
+    position: relative;
+}
+
+.msg-alertJS div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+    position: relative;
+}
+
+.alertJS-box{
+    height: 70px;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    box-shadow: 0px 4px 0px 2px #ccc;
+    -moz-shadow: 0px 4px 0px 2px #ccc;
+    -webkit-shadow: 0px 4px 0px 2px #ccc;
+}
+
+.alertJS-box-success{
+    background-color: rgba(55, 116, 96, 0.8) !important;
+}
+
+.alertJS-box-warning{
+}
+
+.alertJS-box-error{
+    background-color: rgba(189, 54, 47, 0.8) !important;
+}
+
+
+.icon-ret1{
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    background-color: white !important;
+}
+
+.icon-ret2{
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    top: 29px;
+    left: 5px;
+    background-color: white !important;
+}
+
+.icon-success-ret1{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+
+}
+
+.icon-success-ret2{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.icon-warning-ret1{
+
+}
+
+.icon-warning-ret2{
+
+}
+
+.icon-error-ret1{
+    width: 40px;
+    height: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 32px;
+    left: 8px;
+    background-color: white;
+
+}
+
+.icon-error-ret2{
+    width: 40px;
+    height: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    top: 23px;
+    left: 8px;
+    background-color: white;
+}
+
+@media screen and (max-width : 768px ){
+    .alertJS-box{
+        width: 100%;
+    }
+}
