@@ -42,6 +42,13 @@ var AlertJS = {
         setTimeout(function () {
             document.getElementsByClassName("alertJS-container")[0].style.bottom = 0;
         }, 10);
+        
+        setTimeout(function () {
+            document.getElementsByClassName("alertJS-container")[0].style.bottom = "-100%";
+            setTimeout(function () {
+                document.getElementsByClassName("alertJS-container")[0].remove();
+            }, 100);
+        }, 5000);
     },
     showSuccessAlert: function (msg) {
         AlertJS.showAlert(msg, "icon-success-ret1", "icon-success-ret2", "alertJS-box-success");
